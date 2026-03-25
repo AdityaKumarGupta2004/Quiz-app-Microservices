@@ -42,6 +42,8 @@ public class QuestionController {
     @GetMapping("generate")
     public ResponseEntity<List<Integer>> getQuestionsForQuiz
             (@RequestParam String categoryName, @RequestParam Integer numQuestions ){
+        System.out.println("-----------ajdudqwdkqndmdlqd-wfw------>"+categoryName);
+        System.out.println("-----------ajdudqwdkqndmdlqd--r23r2----->"+numQuestions);
         return questionService.getQuestionsForQuiz(categoryName, numQuestions);
     }
 
